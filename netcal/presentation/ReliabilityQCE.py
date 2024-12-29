@@ -8,7 +8,10 @@
 from typing import Union, Iterable, Tuple, List
 import numpy as np
 from matplotlib import pyplot as plt
-import tikzplotlib
+try:
+    import tikzplotlib
+except ImportError:
+    pass
 
 from netcal.metrics.regression import QCE
 

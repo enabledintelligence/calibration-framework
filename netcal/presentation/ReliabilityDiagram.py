@@ -11,7 +11,10 @@ from scipy.stats import norm
 from scipy.interpolate import interp1d, griddata
 
 import matplotlib.pyplot as plt
-import tikzplotlib
+try:
+    import tikzplotlib
+except ImportError:
+    pass
 
 from netcal.metrics.Miscalibration import _Miscalibration
 
