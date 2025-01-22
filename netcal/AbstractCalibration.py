@@ -401,7 +401,7 @@ class AbstractCalibration(BaseEstimator, TransformerMixin):
 
         try:
             with open(filename, 'rb') as read_object:
-                params = torch.load(read_object)
+                params = torch.load(read_object, weights_only=True)
         except RuntimeError:
             raise IOError("Stored models of version <1.1 are not compatible with current version %s" % version)
 
