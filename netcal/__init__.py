@@ -42,7 +42,7 @@ Base class
 """
 
 name = 'netcal'
-__version__ = '1.3.6.post2'
+__version__ = '1.3.6.post3'
 
 from .AbstractCalibration import AbstractCalibration
 from .Decorator import accepts, dimensions, global_accepts, global_dimensions
